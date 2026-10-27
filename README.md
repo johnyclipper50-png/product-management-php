@@ -35,13 +35,12 @@ Aplikasi manajemen produk berbasis web dan API menggunakan **PHP Native** dan da
 | `deskripsi` | `VARCHAR(100)` | Deskripsi singkat produk |
 | `harga` | `INT(11)` | Harga produk dalam Rupiah |
 | `kategori` | `VARCHAR(50)` | Kategori produk |
-| `status_ketersediaan` | `TEXT` | Status (`tersedia` / `habis`) |
+| `status` | `TEXT` | Status (`tersedia` / `habis`) |
 
-### Tabel `users`
+### Tabel `user`
 | Nama Kolom | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
 | `email` | `VARCHAR(100)` | **Primary Key** / Email Pengguna |
-| `username` | `VARCHAR(50)` | Username Pengguna |
 | `password` | `VARCHAR(255)` | Password Pengguna |
 
 ---
@@ -79,7 +78,7 @@ Buka phpMyAdmin (http://localhost/phpmyadmin).
 
 Buat database baru bernama db_inventory (atau sesuaikan dengan konfigurasi kamu).
 
-Buat tabel users dan products sesuai struktur di atas.
+Buat tabel user dan products sesuai struktur di atas.
 
 Masukkan data dummy produk dan setidaknya 1 pengguna ke tabel users.
 
